@@ -188,7 +188,7 @@ function handle_update() {
       ret=\$?
       unset update_mode
       unset -f current_epoch is_update_available update_last_updated_file update_ohmyzsh handle_update 2>/dev/null
-      command rm -rf '$ZSH/log/update.lock'
+      command rm -rf \"\$ZSH/log/update.lock\"
       return \$ret
     " EXIT INT QUIT
 
